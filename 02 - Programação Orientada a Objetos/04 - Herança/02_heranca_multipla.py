@@ -21,8 +21,6 @@ class Ave(Animal):
 class Gato(Mamifero):
     pass
 
-class Passarinho(Ave):
-    pass
 
 class Ornitorrinco(Mamifero, Ave):
     def __init__(self, cor_bico, cor_pelo, nro_patas):
@@ -31,9 +29,6 @@ class Ornitorrinco(Mamifero, Ave):
 
 gato = Gato(nro_patas=4, cor_pelo="Preto")
 print(gato)
-
-passarinho = Passarinho(nro_patas = 2, cor_bico="Amarelo")
-print(passarinho)
 
 ornitorrinco = Ornitorrinco(nro_patas=2, cor_pelo="vermelho", cor_bico="laranja")
 print(ornitorrinco)
